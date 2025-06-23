@@ -145,6 +145,6 @@ export interface Spec extends TurboModule {
     };
     getHarmonyResfilePath(): string;
 }
-declare const _default: Spec;
-export default _default;
+declare let SwissephModule: Spec | null;
+export default SwissephModule;
 //# sourceMappingURL=NativeSwisseph.d.ts.map

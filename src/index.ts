@@ -9,10 +9,20 @@ export function sweJulday(
   hour: number,
   gregflag: number
 ): number {
+  if (!Native) {
+    throw new Error(
+      'Swisseph native module is not available. Make sure the module is properly linked and you are running on a device/simulator.'
+    );
+  }
   return Native.sweJulday(year, month, day, hour, gregflag);
 }
 
 export function sweDeltat(tjd: number): number {
+  if (!Native) {
+    throw new Error(
+      'Swisseph native module is not available. Make sure the module is properly linked and you are running on a device/simulator.'
+    );
+  }
   return Native.sweDeltat(tjd);
 }
 
@@ -20,6 +30,11 @@ export function sweRevjul(
   julday: number,
   gregflag: number
 ): { year: number; month: number; day: number; hour: number } {
+  if (!Native) {
+    throw new Error(
+      'Swisseph native module is not available. Make sure the module is properly linked and you are running on a device/simulator.'
+    );
+  }
   return Native.sweRevjul(julday, gregflag);
 }
 
