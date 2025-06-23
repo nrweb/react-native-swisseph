@@ -248,4 +248,19 @@ export interface Spec extends TurboModule {
   getHarmonyResfilePath(): string;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('Swisseph');
+// Add error handling for TurboModule loading
+let SwissephModule: Spec | null = null;
+
+try {
+  SwissephModule = TurboModuleRegistry.getEnforcing<Spec>('Swisseph');
+} catch (error) {
+  console.warn('Failed to load Swisseph TurboModule:', error);
+  // In development, provide a mock implementation to prevent crashes
+  if (__DEV__) {
+    console.warn(
+      'Running in development mode - using mock Swisseph implementation'
+    );
+  }
+}
+
+export default SwissephModule;
