@@ -2,7 +2,6 @@
   "name": "@nrweb/react-native-swisseph",
   "version": "1.0.0",
   "description": "test",
-  "private": true,
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
