@@ -1,6 +1,6 @@
 {
   "name": "@nrweb/react-native-swisseph",
-  "version": "0.1.12",
+  "version": "1.0.0",
   "description": "test",
   "private": true,
   "source": "./src/index.tsx",
