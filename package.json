@@ -1,5 +1,5 @@
 {
-  "name": "react-native-swisseph",
+  "name": "@nrweb/react-native-swisseph",
   "version": "0.1.12",
   "description": "test",
   "private": true,
@@ -55,7 +55,7 @@
   },
   "homepage": "https://github.com/linchCN/react-native-swisseph#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "devDependencies": {
     "@babel/plugin-transform-private-methods": "^7.25.4",
